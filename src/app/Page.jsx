@@ -1,9 +1,9 @@
-import Camera from "@assets/camera.jpg"
+import Header from "@sections/Header"
 
 export default function Page() {
   return (
     <>
-      <img src={Camera} alt="camera photo" />
+      <Header></Header>
     </>
   )
 }

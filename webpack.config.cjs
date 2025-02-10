@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/app/layout.jsx", //  точка входа - исходный файл
+  entry: "./src/app/main.jsx", //  точка входа - исходный файл
   resolve: {
     alias: {
       "@app": path.resolve(__dirname, "src/app"),

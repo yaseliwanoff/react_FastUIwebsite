@@ -8,9 +8,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "webpack serve --mode=development"
+    "start": "webpack serve --mode=development",
+    "watch": "webpack --watch"
   },
   "dependencies": {
+    "next": "^15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

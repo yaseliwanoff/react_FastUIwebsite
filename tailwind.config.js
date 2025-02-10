@@ -5,7 +5,20 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    screens: {
+      small: "375px",
+      middle: "768px",
+      large: "1216px",
+    },
+    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "20px",
+          large: "80px",
+        },
+      }
+    },
   },
   plugins: [],
 }

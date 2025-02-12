@@ -3,7 +3,7 @@ import Button from "@components/Button"
 
 export default function Header() {
   return (
-    <header className="background-blur-xl z-20 py-2">
+    <header className="background-blur-xl py-2 z-30">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

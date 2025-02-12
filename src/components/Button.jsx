@@ -5,7 +5,7 @@ export default function Button({
   bgColor, 
   text="button no text" }) {
   return (
-    <button className="rounded-[10px]" style={{
+    <button className="main-button rounded-[10px] font-[Raleway] font-normal" style={{
       paddingLeft: paddingY,
       paddingRight: paddingY,
       paddingTop: paddingX,

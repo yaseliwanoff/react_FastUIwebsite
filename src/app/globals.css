@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.main-button {
+.button-classic {
+  cursor: pointer;
+  opacity: 1;
   transition: 0.3s ease-in-out;
 }
 
-.main-button:hover {
+.button-classic:hover {
   opacity: 0.8;
 }

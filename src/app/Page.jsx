@@ -5,9 +5,9 @@ import Specifications from "@sections/Specifications"
 export default function Page() {
   return (
     <>
-      <Header></Header>
-      <Hero></Hero>
-      <Specifications></Specifications>
+      <Header />
+      <Hero />
+      <Specifications />
     </>
   )
 }

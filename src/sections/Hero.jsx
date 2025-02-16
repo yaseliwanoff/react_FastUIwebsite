@@ -1,33 +1,31 @@
-import BackgroundGradient from "@assets/png/bg-gradient.png";
-import Button from "@components/Button";
+import GradientBackground from "@assets/png/bg-gradient.png";
+import ClassicButtons from "@components/Buttons/ClassicButtons";
 
 export default function Hero() {
   return (
-    <div className="container font-[Raleway] relative">
-      <div className="flex flex-col items-center pt-24">
-        <div className="image-container absolute inset-0 -z-10 flex justify-center items-center">
-          <img
-            src={BackgroundGradient}
-            alt="background gradient"
-            className="w-full h-max pt-36"
-          />
-        </div>
-
-        <div className="text-container z-10">
-          <h1 className="font-bold text-7xl text-center w-[38rem] mb-8">
+    <main className="container font-[Raleway] font-normal relative">
+      <div className="flex justify-center -mt-[0%] middle:-mt-[30%] items-center">
+        <img 
+          src={GradientBackground} 
+          alt="gradient background" 
+          className="z-0" 
+        />
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10">
+          <h1 className="font-bold text-3xl middle:text-5xl large:text-[73px] w-[300px] middle:w-[480px] large:w-[737px] text-center leading-[100%] text-white">
             Awesome UI Dark Template for Webflow Agency
           </h1>
-        </div>
-        <div className="button-container z-10">
-          <Button
-            paddingY="58px"
-            paddingX="18px"
-            textColor="#FFFFFF"
-            bgColor="#000000"
-            text="Get In Touch"
-          />
+          <div className="mt-10">
+            <ClassicButtons
+              text="Get in Touch"
+              backgroundColor="#000000"
+              fontWeight="500"
+              textColor="#FFFFFF"
+              paddingY="18px"
+              paddingX="58px"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    </main>
+  )
 }

@@ -58,7 +58,7 @@ export default function Specifications() {
     <section className="container font-[Raleway] font-normal">
       <div className="large:-mt-[200px]">
         <h1 className="font-bold text-[60px]">What We do</h1>
-        <div className="grid grid-cols-4 gap-4 mt-[24px] grid-auto-rows-[252px]">
+        <div className="small:block large:grid grid-cols-4 gap-4 mt-[24px] grid-auto-rows-[252px]">
           {specifications.map((item, index) => {
             let columnSpan = "";
             let rowSpan = "";

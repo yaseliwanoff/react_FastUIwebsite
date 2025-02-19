@@ -22,8 +22,8 @@ export function SpecificationClassicBlock({ icon, title, desc, image, customHeig
     <div style={{
       borderRadius: "10px",
       height: customHeight,
-      width: customWidth,
-    }} className={`bg-gradient-to-tl from-[#050505] to-[#1C1C1C] p-[22px] ${setFlex} border border-[#2B2B2B]`}>
+      width: `large:${csImageWidth}`,
+    }} className={`middle:w-full mt-3 bg-gradient-to-tl from-[#050505] to-[#1C1C1C] p-[22px] ${setFlex} border border-[#2B2B2B]`}>
       <div>
         <div style={{
           borderRadius: "10px",
@@ -35,7 +35,7 @@ export function SpecificationClassicBlock({ icon, title, desc, image, customHeig
           maxWidth: "231px"
         }} className="opacity-80 mt-[19px]">{desc}</p>
       </div>
-      <div className={`${marginLeft}`}>
+      <div className={`${marginLeft} middle:ml-auto hidden middle:flex overflow-x-hidden`}>
         <img className={` flex flex-col ${csImagePosition} ${csImageWidth} ${csImageHeight} ${marginTop}`} src={image} alt="" />
       </div>
     </div>

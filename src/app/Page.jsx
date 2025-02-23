@@ -2,6 +2,10 @@ import Header from "@sections/Header"
 import Hero from "@sections/Hero"
 import Specifications from "@sections/Specifications"
 import CheckWork from "@sections/CheckWork"
+import ReviewsBlock from "@sections/ReviewsBlock"
+import Pricing from "@sections/Pricing"
+import Questions from "@sections/Questions"
+import Contacts from "@sections/Contacts"
 
 export default function Page() {
   return (
@@ -9,7 +13,11 @@ export default function Page() {
       <Header />
       <Hero />
       <Specifications />
-      <CheckWork></CheckWork>
+      <CheckWork />
+      <ReviewsBlock />
+      <Pricing />
+      <Questions />
+      <Contacts />
     </>
   )
 }

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 .button-classic {
   cursor: pointer;
   opacity: 1;
@@ -10,4 +14,14 @@
 
 .button-classic:hover {
   opacity: 0.8;
+}
+
+@layer components {
+  .h2__title {
+    @apply text-[25px] middle:text-[35px] large:text-[60px];
+  }
+
+  .input__style {
+    @apply w-[250px] middle:w-[696px] bg-black border border-[#2B2B2B] py-[20px] px-[32px] rounded-[10px];
+  }
 }

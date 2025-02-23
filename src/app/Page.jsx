@@ -6,6 +6,7 @@ import ReviewsBlock from "@sections/ReviewsBlock"
 import Pricing from "@sections/Pricing"
 import Questions from "@sections/Questions"
 import Contacts from "@sections/Contacts"
+import Footer from "@sections/Footer"
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <Pricing />
       <Questions />
       <Contacts />
+      <Footer />
     </>
   )
 }

@@ -56,8 +56,8 @@ const specifications = [
 export default function Specifications() {
   return (
     <section className="container font-[Raleway] font-normal">
-      <div className="large:-mt-[200px] mt-[50px]">
-        <h1 className="font-bold text-[25px] middle:text-[35px] large:text-[60px]">What We do</h1>
+      <div className="large:-mt-[200px] mt-[50px] middle:mt-[0px]">
+        <h1 className="font-bold h2__title">What We do</h1>
         <div className="small:block large:grid grid-cols-4 gap-4 mt-[24px] grid-auto-rows-[252px]">
           {specifications.map((item, index) => {
             let columnSpan = "";

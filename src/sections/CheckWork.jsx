@@ -21,24 +21,24 @@ const worksImages = [
 
 export default function CheckWork() {
   return (
-    <section className="container mt-[140px] font-[Raleway] font-normal overflow-hidden relative h-screen">
+    <section className="container mt-[10px] large:mt-[140px] font-[Raleway] font-normal overflow-hidden relative h-screen">
       <div className="absolute inset-0 flex justify-center items-center z-0">
         <img draggable={false} src={BackgroundImage} alt="bg image" className="object-contain h-full w-full" />
       </div>
       <div className="relative mt-24">
         <div className="flex justify-between items-center z-10">
-          <div>
+          <div className="hidden large:flex">
             <SliderButtons 
               imageButton={LeftArrow}
             />
           </div>
           <div className="text-center">
-            <h2 className="text-[60px] font-bold">Check our Work</h2>
+            <h2 className="h2__title font-bold">Check our Work</h2>
             <p className="w-full large:w-[499px] opacity-80">
               Take a look at some of our recent projects to see how we've helped businesses like yours succeed online.
             </p>
           </div>
-          <div>
+          <div className="hidden large:flex">
             <SliderButtons 
               imageButton={RightArrow}
             />

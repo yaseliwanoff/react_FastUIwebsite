@@ -1,11 +1,11 @@
-import Logo from "@assets/svg/logo.svg"
-import Instagram from "@assets/svg/insta.svg"
-import LinkIn from "@assets/svg/link.svg"
-import TikTok from "@assets/svg/tiktok.svg"
-import Dribble from "@assets/svg/dribbble.svg"
-import FooterButtons from "@components/Buttons/FooterButtons"
-import Blur1 from "@assets/svg/blur1.png"
-import Blur2 from "@assets/svg/blur2.png"
+import Logo from "@assets/svg/logo.svg";
+import Instagram from "@assets/svg/insta.svg";
+import LinkIn from "@assets/svg/link.svg";
+import TikTok from "@assets/svg/tiktok.svg";
+import Dribble from "@assets/svg/dribbble.svg";
+import FooterButtons from "@components/Buttons/FooterButtons";
+import Blur1 from "@assets/svg/blur1.png";
+import Blur2 from "@assets/svg/blur2.png";
 
 const footerButtons = [
   {

@@ -1,12 +1,14 @@
-import SliderButtons from "@components/Buttons/SliderButtons"
-import LeftArrow from "@assets/svg/left-arrow.svg"
-import RightArrow from "@assets/svg/right-arrow.svg"
-import BackgroundImage from "@assets/png/bg-image.png"
-import Work1 from "@assets/png/work1.png"
-import Work2 from "@assets/png/work2.png"
-import Work3 from "@assets/png/work3.png"
-import WorkBlocksImages from "../components/WorkBlocksImages/WorkBlocksImages"
+import SliderButtons from "@components/Buttons/SliderButtons";
+import LeftArrow from "@assets/svg/left-arrow.svg";
+import RightArrow from "@assets/svg/right-arrow.svg";
+import BackgroundImage from "@assets/png/bg-image.png";
+import Work1 from "@assets/png/work1.png";
+import Work2 from "@assets/png/work2.png";
+import Work3 from "@assets/png/work3.png";
+import WorkBlocksImages from "../components/WorkBlocksImages/WorkBlocksImages";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -20,10 +22,20 @@ const worksImages = [
 ]
 
 export default function CheckWork() {
+  const mainRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: mainRef,
+    offset: ["start end", "end start"],
+  });
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150])
+
   return (
-    <section className="container mt-[10px] large:mt-[140px] font-[Raleway] font-normal overflow-hidden relative h-screen">
+    <section ref={mainRef} className="container mt-[10px] large:mt-[100px] font-[Raleway] font-normal overflow-hidden relative h-screen">
       <div className="absolute inset-0 flex justify-center items-center z-0">
-        <img draggable={false} src={BackgroundImage} alt="bg image" className="object-contain h-full w-full" />
+        <motion.img style={{
+                rotate: 30,
+                translateY: translateY,
+              }} draggable={false} src={BackgroundImage} alt="bg image" className="object-contain h-full w-full" />
       </div>
       <div className="relative mt-24">
         <div className="flex justify-between items-center z-10">

@@ -1,6 +1,8 @@
 import Accordion from "@components/Accordion/Accordion"
 import { useState } from "react";
 import BackgroundImage from "@assets/png/spirrle.png"
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react";
 
 const accordionMenu = [
   {
@@ -40,7 +42,19 @@ export default function Questions() {
   return (
     <section className="mt-[174px] font-[Raleway] font-normal">
       <div className="z-0 absolute -mt-32">
-        <img src={BackgroundImage} alt="background image" />
+        <motion.img
+          src={BackgroundImage}
+          alt="background image"
+          animate={{
+            translateY: [-30, 30],
+          }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration: 3,
+            ease: "easeInOut",
+          }}
+        />
       </div>
       <div className="container z-10 relative">
         <div className="block large:flex justify-between">

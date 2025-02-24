@@ -1,7 +1,9 @@
-import Input from "@components/Input/Input"
-import ClassicButton from "@components/Buttons/ClassicButtons"
-import Star from "@assets/png/star.png"
-import Spline from "@assets/png/spline.png"
+import Input from "@components/Input/Input";
+import ClassicButton from "@components/Buttons/ClassicButtons";
+import Star from "@assets/png/star.png";
+import Spline from "@assets/png/spline.png";
+import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
+import { useRef } from "react";
 
 const inputsContent = [
   {
@@ -29,13 +31,39 @@ export default function Contacts() {
     <section className="font-[Raleway] font-normal pb-5">
       <div className="hidden middle:flex justify-between absolute w-full">
         <div className="flex items-end">
-          <img className="mb-4" src={Star} alt="star" />
+          <motion.img 
+            className="mb-4"
+            src={Star}
+            alt="star"
+            animate={{
+              translateY: [-80, 100]
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+          />
         </div>
-        <div className="flex items-start">
-          <img className="mt-4" src={Spline} alt="star" />
+        <div className="flex items-star z-0">
+          <motion.img
+            className="mt-4"
+            src={Spline}
+            alt="star"
+            animate={{
+              translateY: [50, -30],
+            }}
+            transition={{
+              duration: 5,
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "easeInOut",
+            }}
+          />
         </div>
       </div>
-      <div className="container relative">
+      <div className="container relative z-20">
         <h2 className="h2__title font-bold flex justify-center text-center mt-[25px] large:mt-[150px]">Let’s Get in Touch</h2>
         <div className="flex flex-col gap-4 items-center w-[100%]">
           {inputsContent.map((item) => (

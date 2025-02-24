@@ -23,7 +23,7 @@ export function SpecificationClassicBlock({ icon, title, desc, image, customHeig
       borderRadius: "10px",
       height: customHeight,
       width: `large:${csImageWidth}`,
-    }} className={`middle:w-full mt-3 bg-gradient-to-tl from-[#050505] to-[#1C1C1C] p-[22px] ${setFlex} border border-[#2B2B2B]`}>
+    }} className={`middle:w-full bg-gradient-to-tl from-[#050505] to-[#1C1C1C] p-[22px] ${setFlex} border border-[#2B2B2B]`}>
       <div>
         <div style={{
           borderRadius: "10px",

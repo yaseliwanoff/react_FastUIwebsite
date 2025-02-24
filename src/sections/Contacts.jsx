@@ -1,7 +1,7 @@
 import Input from "@components/Input/Input";
 import ClassicButton from "@components/Buttons/ClassicButtons";
-import Star from "@assets/png/star.png";
-import Spline from "@assets/png/spline.png";
+import Star from "@assets/svg/star.svg";
+import Spline from "@assets/svg/spline.svg";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { useRef } from "react";
 
@@ -36,7 +36,7 @@ export default function Contacts() {
             src={Star}
             alt="star"
             animate={{
-              translateY: [-80, 100]
+              translateY: [-70, 155]
             }}
             transition={{
               duration: 5,
@@ -50,9 +50,9 @@ export default function Contacts() {
           <motion.img
             className="mt-4"
             src={Spline}
-            alt="star"
+            alt="spline"
             animate={{
-              translateY: [50, -30],
+              translateY: [50, -120],
             }}
             transition={{
               duration: 5,
@@ -65,7 +65,7 @@ export default function Contacts() {
       </div>
       <div className="container relative z-20">
         <h2 className="h2__title font-bold flex justify-center text-center mt-[25px] large:mt-[150px]">Let’s Get in Touch</h2>
-        <div className="flex flex-col gap-4 items-center w-[100%]">
+        <div className="flex flex-col gap-4 items-center w-[100%] mt-14">
           {inputsContent.map((item) => (
             <Input
               key={item.name}
